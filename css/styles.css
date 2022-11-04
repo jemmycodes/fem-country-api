@@ -764,6 +764,10 @@ main article figure hgroup p span {
     display: flex;
   }
 
+  .md\:w-96 {
+    width: 24rem;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
