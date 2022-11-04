@@ -1,11 +1,13 @@
 "use strict";
 
 const container = document.getElementById("country-container");
+const select = document.getElementById("select-btn");
 
 const getApi = async (url) => {
   const response = await fetch(url);
   const data = await response.json();
   renderCountry(data);
+  return data;
 };
 
 const renderCountry = (data) => {
@@ -28,5 +30,17 @@ const renderCountry = (data) => {
     container.insertAdjacentHTML("beforeend", html);
   });
 };
+
+const chooseRegion = async () => {
+  container.replaceChildren();
+  const response = await fetch(
+    `https://restcountries.com/v3.1/region/${select.value}`
+  );
+  const data = await response.json();
+  console.log(data);
+  renderCountry(data);
+};
+
+select.addEventListener("change", chooseRegion);
 
 getApi(`https://restcountries.com/v3.1/all`);
