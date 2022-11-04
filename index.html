@@ -2,32 +2,69 @@
 <html lang="en">
   <head>
     <script
-      src="https://kit.fontawesome.com/7d0b210038.js"
+      src="https://kit.fontawesome.com/7c27cadb0a.js"
       crossorigin="anonymous"
     ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="script.js" defer></script>
     <title>Rest Countries API</title>
   </head>
   <body>
     <header
-      class="bg-DarkModeTextLightModeElements py-6 px-3 flex justify-between items-center"
+      class="bg-DarkModeTextLightModeElements py-6 px-5 flex justify-between items-center max-w-6xl mx-auto"
     >
       <p class="font-extrabold">Where in the world?</p>
 
       <p class="font-light">
-        <span class="mr-2"> <i class="fa-light fa-moon fa-2xl"></i></span>Dark
+        <span class="mr-2"> <i class="fa-regular fa-moon fa-2xl"></i></span>Dark
         Mode
       </p>
     </header>
-    <section class="bg-VeryLightGray p-32"></section>
+    <section class="bg-VeryLightGray">
+      <div
+        class="p-5 max-w-6xl mx-auto space-y-12 md:flex md:flex-row md:justify-between md:space-y-0"
+      >
+        <input
+          type="text"
+          id="search-box"
+          class="h-12 rounded-md w-96 px-14 placeholder:p-14"
+          placeholder="Search for a country"
+        />
+        <select class="h-10 w-fit px-7 rounded-md">
+          <option value="">Filter by Region</option>
+          <option value="africa">Africa</option>
+          <option value="america">America</option>
+          <option value="asia">Asia</option>
+          <option value="europe">Europe</option>
+          <option value="oceania">Oceania</option>
+        </select>
+      </div>
+      <main class="max-w-6xl mx-auto p-5">
+        <article
+          id="country-container"
+          class="w-full justify-center flex flex-wrap gap-10"
+        >
+          <!-- <figure class="w-[15rem]">
+            <img src="images/image-currency.jpg" alt="" class="rounded-t-md" />
+            <hgroup class="bg-DarkModeTextLightModeElements rounded-b-md p-5">
+              <p class="font-extrabold pb-4">Germany</p>
+              <p>Population: <span>3,773,848</span></p>
+              <p>Region: <span>Europe</span></p>
+              <p>Capital: <span>Berlin</span></p>
+            </hgroup>
+          </figure> -->
+        </article>
+      </main>
+    </section>
   </body>
 </html>

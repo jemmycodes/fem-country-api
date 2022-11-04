@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#search-box {
+  background-image: url("../images/search-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  background-position: 1rem center;
+}
+
+@layer base {
+  main article figure hgroup p {
+    @apply font-semibold text-LightModeText;
+  }
+
+  main article figure hgroup p span {
+    @apply font-light text-LightModeText;
+  }
+}
