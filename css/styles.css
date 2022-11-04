@@ -569,6 +569,40 @@ main article figure hgroup p span {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -590,6 +624,14 @@ main article figure hgroup p span {
   height: 2.5rem;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
 .w-96 {
   width: 24rem;
 }
@@ -600,12 +642,16 @@ main article figure hgroup p span {
   width: fit-content;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .w-\[15rem\] {
   width: 15rem;
 }
 
-.w-full {
-  width: 100%;
+.w-32 {
+  width: 8rem;
 }
 
 .max-w-6xl {
@@ -628,20 +674,8 @@ main article figure hgroup p span {
   justify-content: space-between;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .gap-10 {
   gap: 2.5rem;
-}
-
-.gap-16 {
-  gap: 4rem;
-}
-
-.gap-14 {
-  gap: 3.5rem;
 }
 
 .space-y-12 > :not([hidden]) ~ :not([hidden]) {

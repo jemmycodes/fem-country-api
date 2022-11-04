@@ -11,7 +11,7 @@ const getApi = async (url) => {
 const renderCountry = (data) => {
   data.forEach((country) => {
     const html = `<figure class="w-[15rem]">
-        <img src="${country.flags.png}" alt="" class="rounded-t-md w-32 h-28" />
+        <img src="${country.flags.png}" alt="" class="rounded-t-md w-full h-32" />
         <hgroup class="bg-DarkModeTextLightModeElements rounded-b-md p-5">
           <p class="font-extrabold pb-4">${country.name.common}</p>
           <p>
